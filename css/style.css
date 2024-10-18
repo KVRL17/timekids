@@ -21,6 +21,30 @@
 
 
 
+
+
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 1.1rem;
+    }
+
+    .col-lg-8, .col-lg-4 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+
 .responsive-media-container {
     display: flex;
     flex-wrap: wrap;
