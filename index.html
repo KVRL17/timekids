@@ -31,7 +31,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-image: url();">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -52,12 +52,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="appointment.html" class="nav-item nav-link">Programs</a>
-                    <a href="" class="nav-item nav-link">Curriculam</a>
-                    <a href="" class="nav-item nav-link">Media</a>
-                    <a href="" class="nav-item nav-link">Contact Us</a>
+                    <a href="index.html" class="nav-item nav-link active">HOME</a>
+                    <a href="about.html" class="nav-item nav-link">ABOUT US</a>
+                    <a href="appointment.html" class="nav-item nav-link">PROGRAMS</a>
+                    <a href="classes.html" class="nav-item nav-link">CURRICULAM</a>
+                    <a href="" class="nav-item nav-link">MEDIA</a>
+                    <a href="" class="nav-item nav-link">CONTACT US</a>
                 </div>
             </div>
         </nav>
@@ -67,8 +67,20 @@
         <!-- Carousel Start -->
         <div class="container-fluid p-0">
             <div class="owl-carousel header-carousel position-relative">
-                <div class="bg-warning">
-                    <img class="img-fluid" alt="">
+                <div>
+                    <img class="img-fluid" alt="" src="./img/images/homebggg.png">
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mt-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div>
                     <div class="responsive-media-container">
                         <div class="media-item">
                             <img src="/img/images/homebg.png" alt="Pre-school Image">
@@ -88,10 +100,9 @@
 
 
 
-
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-warning rounded">
+                <div class="bg-info rounded">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
@@ -101,19 +112,19 @@
                                         <div class="col-sm-6">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control border-0" id="name" placeholder="Gurdian Name">
-                                                <label for="gname">Name</label>
+                                                <label for="gname"><strong> Name </strong></label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
                                                 <input type="number" class="form-control border-0" id="mobile" placeholder="Mobile Number">
-                                                <label for="mobile">Mobile Number</label>
+                                                <label for="mobile"><strong> Mobile Number </strong></label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
                                                 <input type="email" class="form-control border-0" id="mail" placeholder="Gurdian Email">
-                                                <label for="mail">Email</label>
+                                                <label for="mail"><strong> Email </strong></label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -123,13 +134,13 @@
                                                     <option value="MM Nagar">MM Nagar</option>
                                                     <option value="Mookandapalli">Mookandapalli</option>
                                                 </select>
-                                                <label for="location">Location</label>
+                                                <label for="location"><strong> Location </strong></label>
                                             </div>
                                         </div>                                        
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
+                                                <label for="message"><strong> Message </strong></label>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -142,12 +153,12 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Welcome to T.I.M.E. Kids</h1>
-                                <p class="mb-4">
+                                <p class="mb-4 text-white">
                                     T.I.M.E. Kids pre-schools is a chain of pre-schools launched by T.I.M.E., the national leader in entrance exam training. After its hugely successful beginning in Hyderabad, T.I.M.E. Kids with 250+ pre-schools is now poised for major expansion across the country.
                                     The programme at T.I.M.E. Kids pre-schools aims at making the transition from home to school easy, by providing the warm, safe and caring and learning environment that young children have at home. Our play schools offer wholesome, fun-filled and memorable childhood education to our children.
                                 </p>
                                 
-                                <p id="additionalContent" class="mb-4 hidden">                                  
+                                <p id="additionalContent" class="mb-4 hidden text-white">                                  
                                     T.I.M.E. Kids pre-schools are backed by our educational expertise of over 30 years, well-trained care providers, and a balanced educational programme. The programme at T.I.M.E. Kids pre-schools is based on the principles of age-appropriate child development practices. All our Play schools are well-equipped with learning aids and educational toys suitable for different age groups.
                                 
                                     The monthly curriculum at our play schools is activity-based with emphasis on concepts and themes. The classrooms and corridors at our play schools have been carefully designed to be safe, colourful and stimulating. Outdoor activities are full of fun, with safe, sturdy equipment, placed in ample open space at all our play schools.
@@ -175,64 +186,64 @@
                         <div class="facility-item">
                             <div class="facility-icon bg-success">
                                 <span class="bg-success"></span>
-                                <i class="fa fa-futbol fa-3x text-success"></i>
+                                <i class="fa fa-futbol fa-3x text-white"></i>
                                 <span class="bg-success"></span>
                             </div>
                             <div class="facility-text bg-success">
-                                <h3 class="text-success mb-3">Play group</h3>
-                                <p class="mb-0">The Journey Starts here
+                                <h3 class="text-white mb-3">Play group</h3>
+                                <p class="mb-0 text-white">The Journey Starts here
                                     Your child’s First Pit-Stop</p>
-                                <p class="mb-0">2 yrs to 3 yrs </p>
+                                <p class="mb-0 text-white">2 yrs to 3 yrs </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-primary">
-                                <span class="bg-primary"></span>
-                                <i><img src="./img/images/th.png" style="height: 50px;width: 50px;"/></i>
-                                <span class="bg-primary"></span>
-                            </div>
-                            <div class="facility-text bg-primary">
-                                <h3 class="text-primary mb-3">Nursery</h3>
-                                <p class="mb-0">The Martian rocket is fueled. Now
-                                    your child is ready for nursery.</p>
-                                    <p class="mb-0">3 yrs to 4 yrs </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="facility-item">
                             <div class="facility-icon bg-warning">
                                 <span class="bg-warning"></span>
-                                <i class="fa fa-chalkboard-teacher fa-3x text-warning"></i>
+                                <i><img src="./img/images/th.png" style="height: 50px;width: 50px;"/></i>
                                 <span class="bg-warning"></span>
                             </div>
                             <div class="facility-text bg-warning">
-                                <h3 class="text-warning mb-3">Pre-Primary 1</h3>
-                                <p class="mb-0">Here your child will land in Pre-Primary 1,
-                                    The world of Conceptual Learning</p>
-                                    <p class="mb-0">4 yrs to 5 yrs </p>
+                                <h3 class="text-white mb-3">Nursery</h3>
+                                <p class="mb-0 text-white">The Martian rocket is fueled. Now
+                                    your child is ready for nursery.</p>
+                                    <p class="mb-0 text-white">3 yrs to 4 yrs </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-info">
-                                <span class="bg-info"></span>
-                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
-                                <span class="bg-info"></span>
+                            <div class="facility-icon" style="background-color: #153b8e;">
+                                <span style="background-color: #153b8e;"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x text-white"></i>
+                                <span style="background-color: #153b8e;"></span>
                             </div>
-                            <div class="facility-text bg-info">
-                                <h3 class="text-warning mb-3">Pre-Primary 2</h3>
-                                <p class="mb-0">Your child will expand his/her world in
-                                    Pre-Primary 2,
-                                    By Exploring New Languages and Writing Skills</p>
-                                    <p class="mb-0">4.5 yrs to 5.5 yrs </p>
+                            <div class="facility-text" style="background-color: #153b8e;">
+                                <h3 class="text-white mb-3">Pre-Primary 1</h3>
+                                <p class="mb-0 text-white">Here your child will land in Pre-Primary 1,
+                                    The world of Conceptual Learning</p>
+                                    <p class="mb-0 text-white">4 yrs to 5 yrs </p>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 200px;">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x text-white"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-white mb-3">Pre-Primary 2</h3>
+                                <p class="mb-0 text-white">Your child will expand his/her world in
+                                    Pre-Primary 2,
+                                    By Exploring New Languages and Writing Skills</p>
+                                    <p class="mb-0 text-white">4.5 yrs to 5.5 yrs </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 200px;">
                         <button class="btn btn-primary w-100 py-3" type="submit"><a href="appointment.html" style="text-decoration: none;color: white;">View More</a></button>
                     </div>
                 </div>
@@ -243,62 +254,65 @@
 
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">School Curriculam</h1>
                     <p>In Our Curriculam, We Develop The below Goals</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 mt-3">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <div class="rounded-circle w-75 mx-auto p-3" style="background-color: #dc2c1d;">
                                 <img class="img-fluid rounded-circle" src="img/images/socialskills.jpg" alt="">
                             </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3" href="">Social Skills</a>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #dc2c1d;">
+                                <a class="d-block text-center text-white h3 mt-3" href="">Social Skills</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <div class="rounded-circle w-75 mx-auto p-3" style="background-color: #bad700;">
                                 <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
                             </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3" href="">Cognitive Skills</a>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #bad700;">
+                                <a class="d-block text-center text-white h3 mt-3" href="">Cognitive Skills</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <div class="rounded-circle w-75 mx-auto p-3" style="background-color: #153b8e;">
                                 <img class="img-fluid rounded-circle" src="img/appointment.jpg" alt="">
                             </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3" href="">Emotional Skills</a>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #153b8e;">
+                                <a class="d-block text-center text-white h3 mt-3" href="">Emotional Skills</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
+                            <div class="rounded-circle w-75 mx-auto p-3" style="background-color: #f07e01;">
+                                <img class="img-fluid rounded-circle" src="img/images/physicalskills.jpg" alt="">
                             </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3" href="">Physical Skills</a>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #f07e01;">
+                                <a class="d-block text-center text-white h3 mt-3" href="">Physical Skills</a>
                             </div>
                         </div>
-                    </div>
+                </div>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 200px;">
+                    <button class="btn btn-primary w-100 py-3" type="submit"><a href="classes.html" style="text-decoration: none;color: white;">View More</a></button>
+                </div>
                 </div>
             </div>
         </div>
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" style="background-color: #153b8e;">
             <div class="container">
                 <div class="row g-9 justify-content-center align-items-center">
                     <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1000px;">
-                            <h1>Our Media</h1>
+                            <h1 class="text-white">Our Media</h1>
                         </div>
                         <div class="row g-9 justify-content-center align-items-center wow fadeInUp">
                             <div class="col-lg-9 col-md-6">
@@ -376,11 +390,11 @@
         <!-- Appointment Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-light rounded">
+                <div class="bg-success rounded">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Contact Us</h1>
+                                <h1 class="mb-4 text-white">Contact Us</h1>
                                 <form>
                                     <div class="row g-3">
                                         <div class="col-sm-6">
