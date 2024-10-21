@@ -73,7 +73,7 @@
                     <a href="index.html" class="nav-item nav-link">HOME</a>
                     <a href="about.html" class="nav-item nav-link">ABOUT US</a>
                     <a href="appointment.html" class="nav-item nav-link">PROGRAMS</a>
-                    <a href="classes.html" class="nav-item nav-link">CURRICULAM</a>
+                    <a href="classes.html" class="nav-item nav-link">CURRICULUM</a>
                     <a href="team.html" class="nav-item nav-link">MEDIA</a>
                     <a href="contact.html" class="nav-item nav-link active">CONTACT US</a>
                 </div>
@@ -92,48 +92,78 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <form>
-                                    <h1 class="mb-4 text-white">Contact Us</h1>
+                                <h1 class="mb-4 text-white">Contact Us</h1>
+                                <form id="parentChildFormTwo">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                <label for="name">Your Name</label>
+                                                <input type="text" class="form-control border-0" id="parentName" placeholder="Parent Name">
+                                                <label for="parentName">Parent Name</label>
+                                                <div class="text-danger" id="parentNameError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                <label for="email">Your Email</label>
+                                                <input type="email" class="form-control border-0" id="parentEmail" placeholder="Parent Email">
+                                                <label for="parentEmail">Parent Email</label>
+                                                <div class="text-danger" id="parentEmailError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="childName" placeholder="Child Name">
+                                                <label for="childName">Child Name</label>
+                                                <div class="text-danger" id="childNameError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="childAge" placeholder="Child Age">
+                                                <label for="childAge">Child Age</label>
+                                                <div class="text-danger" id="childAgeError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-floating">
+                                                <select class="form-control border-0" id="childLocation" aria-label="Location" style="text-decoration: none;">
+                                                    <option value="" disabled selected>Select Location</option>
+                                                    <option value="MM Nagar">MM Nagar</option>
+                                                    <option value="Mookandapalli">Mookandapalli</option>
+                                                </select>
+                                                <label for="childLocation">Location</label>
+                                                <div class="text-danger" id="childLocationError"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                <label for="subject">Subject</label>
+                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="childMessage" style="height: 100px"></textarea>
+                                                <label for="childMessage">Message</label>
+                                                <div class="text-danger" id="childMessageError"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <iframe class="position-relative rounded w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                                frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
+                            <div class="position-relative h-100 d-flex flex-column">
+                                <div class="position-relative h-50" style="min-height: 200px;">
+                                    <iframe class="position-relative rounded w-100 h-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.3417536029386!2d77.8295438741426!3d12.737864219841113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13e0fd3207d5%3A0xaf02eddf1ab89de9!2sTime%20Kids%20Pre-School%2C%20MM%20Nagar%2C%20Hosur%2C%20Tamil%20Nadu%20635001!5e0!3m2!1sen!2sin!4v1697808920123!5m2!1sen!2sin"
+                                    frameborder="0" style="min-height: 200px; border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                                </div>
+                                <div class="position-relative h-50 mt-2" style="min-height: 200px;">
+                                    <iframe class="position-relative rounded w-100 h-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.631746660961!2d77.81849377414256!3d12.707438119825436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae12e8d9255a1d%3A0x12b9719f03e4e8cb!2sTime%20Kids%20Pre-School%2C%20Mookandapalli%2C%20Hosur%2C%20Tamil%20Nadu%20635001!5e0!3m2!1sen!2sin!4v1697808987671!5m2!1sen!2sin"
+                                    frameborder="0" style="min-height: 200px; border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                                </div>
                             </div>
-                        </div>
+                        </div>                                              
                     </div>
                 </div>
             </div>
@@ -159,11 +189,11 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="appointment.html">Our Programs</a>
+                        <a class="btn btn-link text-white-50" href="classes.html">Our Curriculam</a>
+                        <a class="btn btn-link text-white-50" href="team.html">Our Media</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
@@ -194,7 +224,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Time Kids</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">Time Kids</a>, All Right Reserved. <span id="currentYear"></span>
                         </div>
                     </div>
                 </div>
@@ -235,6 +265,92 @@
         }
     }
     </script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        document.getElementById("parentChildFormTwo").addEventListener("submit", function (event) {
+            event.preventDefault();
+    
+            // Clear previous error messages
+            document.getElementById("parentNameError").innerText = "";
+            document.getElementById("parentEmailError").innerText = "";
+            document.getElementById("childNameError").innerText = "";
+            document.getElementById("childAgeError").innerText = "";
+            document.getElementById("childLocationError").innerText = "";
+            document.getElementById("childMessageError").innerText = "";
+    
+            // Form validation
+            var parentName = document.getElementById("parentName").value.trim();
+            var parentEmail = document.getElementById("parentEmail").value.trim();
+            var childName = document.getElementById("childName").value.trim();
+            var childAge = document.getElementById("childAge").value.trim();
+            var childLocation = document.getElementById("childLocation").value;
+            var childMessage = document.getElementById("childMessage").value.trim();
+    
+            var isValid = true;
+    
+            if (!parentName) {
+                document.getElementById("parentNameError").innerText = "Please enter the parent name.";
+                isValid = false;
+            }
+    
+            // Validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!parentEmail) {
+                document.getElementById("parentEmailError").innerText = "Please enter the parent email.";
+                isValid = false;
+            } else if (!emailRegex.test(parentEmail)) {
+                document.getElementById("parentEmailError").innerText = "Please enter a valid email address.";
+                isValid = false;
+            }
+    
+            if (!childName) {
+                document.getElementById("childNameError").innerText = "Please enter the child name.";
+                isValid = false;
+            }
+    
+            // Validate age (must be a number between 0 and 18)
+            var ageRegex = /^(?:1[0-8]|[1-9])$/;
+            if (!childAge) {
+                document.getElementById("childAgeError").innerText = "Please enter the child age.";
+                isValid = false;
+            } else if (!ageRegex.test(childAge)) {
+                document.getElementById("childAgeError").innerText = "Please enter a valid age (1-18).";
+                isValid = false;
+            }
+    
+            if (!childLocation) {
+                document.getElementById("childLocationError").innerText = "Please select a location.";
+                isValid = false;
+            }
+    
+            if (!childMessage) {
+                document.getElementById("childMessageError").innerText = "Please enter a message.";
+                isValid = false;
+            }
+    
+            if (isValid) {
+                // Create WhatsApp message
+                var whatsappMessage = `Parent Name: ${parentName}\nParent Email: ${parentEmail}\nChild Name: ${childName}\nChild Age: ${childAge}\nLocation: ${childLocation}\nMessage: ${childMessage}`;
+                var whatsappUrl = `https://wa.me/+917708099799?text=${encodeURIComponent(whatsappMessage)}`;
+    
+                // Redirect to WhatsApp
+                window.open(whatsappUrl, '_blank');
+    
+                // Reset form fields after submission
+                document.getElementById("parentChildFormTwo").reset();
+            }
+        });
+    </script>
+    
+    <style>
+        .text-danger {
+            color: red;
+            font-size: 0.875em;
+            margin-top: 5px;
+        }
+    </style>
 </body>
 
 </html>

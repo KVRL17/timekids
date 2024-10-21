@@ -52,12 +52,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link active">HOME</a>
-                    <a href="about.html" class="nav-item nav-link">ABOUT US</a>
-                    <a href="appointment.html" class="nav-item nav-link">PROGRAMS</a>
-                    <a href="classes.html" class="nav-item nav-link">CURRICULAM</a>
-                    <a href="team.html" class="nav-item nav-link">MEDIA</a>
-                    <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
+                    <a href="index.html" class="nav-item nav-link active" style="color: #dc2c1d; position: relative; text-decoration: none;">
+                        <span class="nav-text">HOME</span>
+                    </a>
+                    <a href="about.html" class="nav-item nav-link" style="color: #153b8e; position: relative; text-decoration: none;">
+                        <span class="nav-text">ABOUT US</span>
+                    </a>
+                    <a href="appointment.html" class="nav-item nav-link" style="color: #f07e01; position: relative; text-decoration: none;">
+                        <span class="nav-text">PROGRAMS</span>
+                    </a>
+                    <a href="classes.html" class="nav-item nav-link" style="color: #bad700; position: relative; text-decoration: none;">
+                        <span class="nav-text">CURRICULUM</span>
+                    </a>
+                    <a href="team.html" class="nav-item nav-link" style="color: #00a2d3; position: relative; text-decoration: none;">
+                        <span class="nav-text">MEDIA</span>
+                    </a>
+                    <a href="contact.html" class="nav-item nav-link" style="color: #fac900; position: relative; text-decoration: none;">
+                        <span class="nav-text">CONTACT US</span>
+                    </a>                    
                 </div>
             </div>
         </nav>
@@ -161,7 +173,7 @@
                                 <h1 class="mb-4">Welcome to T.I.M.E. Kids</h1>
                                 <p class="mb-4 text-white">
                                     T.I.M.E. Kids pre-schools is a chain of pre-schools launched by T.I.M.E., the national leader in entrance exam training. After its hugely successful beginning in Hyderabad, T.I.M.E. Kids with 250+ pre-schools is now poised for major expansion across the country.
-                                    The programme at T.I.M.E. Kids pre-schools aims at making the transition from home to school easy, by providing the warm, safe and caring and learning environment that young children have at home. Our play schools offer wholesome, fun-filled and memorable childhood education to our children.
+                                    The programme at T.I.M.E. Kids pre-schools aims at making the transition from home to school easy, by providing the warm, safe, caring and learning environment that young children have at home. Our play schools offer wholesome, fun-filled and memorable childhood education to our children.
                                 </p>
                                 
                                 <p id="additionalContent" class="mb-4 hidden text-white">                                  
@@ -266,40 +278,45 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Admission Enquiry</h1>
-                                <form>
+                                <form id="contactForm">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Gurdian Name">
-                                                <label for="gname"><strong> Name </strong></label>
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Name">
+                                                <label for="name"><strong>Name</strong></label>
+                                                <div class="text-danger" id="nameError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="number" class="form-control border-0" id="mobile" placeholder="Mobile Number">
-                                                <label for="mobile"><strong> Mobile Number </strong></label>
+                                                <input type="text" class="form-control border-0" id="mobile" placeholder="Mobile Number">
+                                                <label for="mobile"><strong>Mobile Number</strong></label>
+                                                <div class="text-danger" id="mobileError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="mail" placeholder="Gurdian Email">
-                                                <label for="mail"><strong> Email </strong></label>
+                                                <input type="email" class="form-control border-0" id="mail" placeholder="Email">
+                                                <label for="mail"><strong>Email</strong></label>
+                                                <div class="text-danger" id="mailError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <select class="form-control border-0" id="location" aria-label="Location" style="text-decoration: none;">
+                                                <select class="form-control border-0" id="location" aria-label="Location">
                                                     <option value="" disabled selected>Select Location</option>
                                                     <option value="MM Nagar">MM Nagar</option>
                                                     <option value="Mookandapalli">Mookandapalli</option>
                                                 </select>
-                                                <label for="location"><strong> Location </strong></label>
+                                                <label for="location"><strong>Location</strong></label>
+                                                <div class="text-danger" id="locationError"></div>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message"><strong> Message </strong></label>
+                                                <label for="message"><strong>Message</strong></label>
+                                                <div class="text-danger" id="messageError"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -421,46 +438,52 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4 text-white">Contact Us</h1>
-                                <form>
+                                <form id="parentChildFormTwo">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" class="form-control border-0" id="parentName" placeholder="Parent Name">
+                                                <label for="parentName">Parent Name</label>
+                                                <div class="text-danger" id="parentNameError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
+                                                <input type="email" class="form-control border-0" id="parentEmail" placeholder="Parent Email">
+                                                <label for="parentEmail">Parent Email</label>
+                                                <div class="text-danger" id="parentEmailError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
+                                                <input type="text" class="form-control border-0" id="childName" placeholder="Child Name">
+                                                <label for="childName">Child Name</label>
+                                                <div class="text-danger" id="childNameError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
+                                                <input type="text" class="form-control border-0" id="childAge" placeholder="Child Age">
+                                                <label for="childAge">Child Age</label>
+                                                <div class="text-danger" id="childAgeError"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-floating">
-                                                <select class="form-control border-0" id="location" aria-label="Location" style="text-decoration: none;">
+                                                <select class="form-control border-0" id="childLocation" aria-label="Location" style="text-decoration: none;">
                                                     <option value="" disabled selected>Select Location</option>
                                                     <option value="MM Nagar">MM Nagar</option>
                                                     <option value="Mookandapalli">Mookandapalli</option>
                                                 </select>
-                                                <label for="location">Location</label>
+                                                <label for="childLocation">Location</label>
+                                                <div class="text-danger" id="childLocationError"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
+                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="childMessage" style="height: 100px"></textarea>
+                                                <label for="childMessage">Message</label>
+                                                <div class="text-danger" id="childMessageError"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -481,6 +504,12 @@
         </div>
         <!-- Appointment End -->
 
+        <div class="whatsapp-icon">
+            <a href="https://wa.me/+917708099799?text=Hello,%20I%20would%20like%20to%20enquire%20about%20the%20admissions%20in%20Time%20Kids%20Preschool%20Could%20you%20provide%20more%20details%20on%20available%20programs%20andcircullam%20%20the%20Admission%20process?" target="_blank">
+                <img src="./img/images/whatsapp.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -499,11 +528,11 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="appointment.html">Our Programs</a>
+                        <a class="btn btn-link text-white-50" href="classes.html">Our Curriculam</a>
+                        <a class="btn btn-link text-white-50" href="team.html">Our Media</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
@@ -534,7 +563,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Time Kids</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">Time Kids</a>, All Right Reserved. <span id="currentYear"></span>
                         </div>
                     </div>
                 </div>
@@ -571,6 +600,160 @@
             button.textContent = 'View More'; // Change button text
         }
     }
+    </script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+    
+            // Clear previous error messages
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("mobileError").innerText = "";
+            document.getElementById("mailError").innerText = "";
+            document.getElementById("locationError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+    
+            // Form validation
+            var name = document.getElementById("name").value.trim();
+            var mobile = document.getElementById("mobile").value.trim();
+            var mail = document.getElementById("mail").value.trim();
+            var location = document.getElementById("location").value;
+            var message = document.getElementById("message").value.trim();
+    
+            var isValid = true;
+    
+            if (!name) {
+                document.getElementById("nameError").innerText = "Please enter your name.";
+                isValid = false;
+            }
+    
+            // Validate mobile number (India: 10 digits)
+            var mobileRegex = /^[6-9]\d{9}$/;
+            if (!mobile) {
+                document.getElementById("mobileError").innerText = "Please enter your mobile number.";
+                isValid = false;
+            } else if (!mobileRegex.test(mobile)) {
+                document.getElementById("mobileError").innerText = "Please enter a valid 10-digit mobile number.";
+                isValid = false;
+            }
+    
+            // Validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!mail) {
+                document.getElementById("mailError").innerText = "Please enter your email.";
+                isValid = false;
+            } else if (!emailRegex.test(mail)) {
+                document.getElementById("mailError").innerText = "Please enter a valid email address.";
+                isValid = false;
+            }
+    
+            if (!location) {
+                document.getElementById("locationError").innerText = "Please select your location.";
+                isValid = false;
+            }
+    
+            if (!message) {
+                document.getElementById("messageError").innerText = "Please enter your message.";
+                isValid = false;
+            }
+    
+            if (isValid) {
+                // Create WhatsApp message
+                var whatsappMessage = `Name: ${name}\nMobile: ${mobile}\nEmail: ${mail}\nLocation: ${location}\nMessage: ${message}`;
+                var whatsappUrl = `https://wa.me/+917708099799?text=${encodeURIComponent(whatsappMessage)}`;
+    
+                // Redirect to WhatsApp
+                window.open(whatsappUrl, '_blank');
+    
+                // Reset form fields after submission
+                document.getElementById("contactForm").reset();
+            }
+        });
+    </script>
+    
+    <style>
+        .text-danger {
+            color: red;
+            font-size: 0.875em;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        document.getElementById("parentChildFormTwo").addEventListener("submit", function (event) {
+            event.preventDefault();
+    
+            // Clear previous error messages
+            document.getElementById("parentNameError").innerText = "";
+            document.getElementById("parentEmailError").innerText = "";
+            document.getElementById("childNameError").innerText = "";
+            document.getElementById("childAgeError").innerText = "";
+            document.getElementById("childLocationError").innerText = "";
+            document.getElementById("childMessageError").innerText = "";
+    
+            // Form validation
+            var parentName = document.getElementById("parentName").value.trim();
+            var parentEmail = document.getElementById("parentEmail").value.trim();
+            var childName = document.getElementById("childName").value.trim();
+            var childAge = document.getElementById("childAge").value.trim();
+            var childLocation = document.getElementById("childLocation").value;
+            var childMessage = document.getElementById("childMessage").value.trim();
+    
+            var isValid = true;
+    
+            if (!parentName) {
+                document.getElementById("parentNameError").innerText = "Please enter the parent name.";
+                isValid = false;
+            }
+    
+            // Validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!parentEmail) {
+                document.getElementById("parentEmailError").innerText = "Please enter the parent email.";
+                isValid = false;
+            } else if (!emailRegex.test(parentEmail)) {
+                document.getElementById("parentEmailError").innerText = "Please enter a valid email address.";
+                isValid = false;
+            }
+    
+            if (!childName) {
+                document.getElementById("childNameError").innerText = "Please enter the child name.";
+                isValid = false;
+            }
+    
+            // Validate age (must be a number between 0 and 18)
+            var ageRegex = /^(?:1[0-8]|[1-9])$/;
+            if (!childAge) {
+                document.getElementById("childAgeError").innerText = "Please enter the child age.";
+                isValid = false;
+            } else if (!ageRegex.test(childAge)) {
+                document.getElementById("childAgeError").innerText = "Please enter a valid age (1-18).";
+                isValid = false;
+            }
+    
+            if (!childLocation) {
+                document.getElementById("childLocationError").innerText = "Please select a location.";
+                isValid = false;
+            }
+    
+            if (!childMessage) {
+                document.getElementById("childMessageError").innerText = "Please enter a message.";
+                isValid = false;
+            }
+    
+            if (isValid) {
+                // Create WhatsApp message
+                var whatsappMessage = `Parent Name: ${parentName}\nParent Email: ${parentEmail}\nChild Name: ${childName}\nChild Age: ${childAge}\nLocation: ${childLocation}\nMessage: ${childMessage}`;
+                var whatsappUrl = `https://wa.me/+917708099799?text=${encodeURIComponent(whatsappMessage)}`;
+    
+                // Redirect to WhatsApp
+                window.open(whatsappUrl, '_blank');
+    
+                // Reset form fields after submission
+                document.getElementById("parentChildFormTwo").reset();
+            }
+        });
     </script>
 </body>
 
